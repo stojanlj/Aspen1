@@ -37,7 +37,7 @@ function setup() {
   buttonMic = createButton("Microphone");
   buttonMic.mousePressed(toggleMic);
   
-  colorSlider = createSlider(0, 3, 0, 1);
+  colorSlider = createSlider(0, 4, 0, 1);
   colorLabel = createSpan("COLOR /");
   colorLabel.style('font-family', '"arsenica-variable", sans-serif');
   colorLabel.style('font-variation-settings', '"opsz" 100, "wght" 475');
@@ -255,9 +255,12 @@ function draw() {
   } else if (colorSlider.value() == 1) {
     textColor = '#FFC145';
     bkgdColor = '#06360c';
-  } else if (colorSlider.value() == 3) {
+  } else if (colorSlider.value() == 4) {
     textColor = '#86c3d1';
     bkgdColor = '#073507';
+  } else if (colorSlider.value() == 3) {
+    textColor = '#ffc050';
+    bkgdColor = '#5e870f';
   } else {
     textColor = '#074908';
     bkgdColor = '#87C0C9';
