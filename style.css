@@ -1,0 +1,92 @@
+html, body {
+  margin: 0;
+  padding: 0;
+}
+@font-face {
+  font-family: 'Aspen';
+  src: url('Aspen_0728VF.ttf');
+}
+
+button {
+  font-family: "arsenica-variable", sans-serif;
+  font-variation-settings: "opsz" 100, "wght" 525;
+  font-size: 0.7em;
+  text-transform: uppercase;
+  letter-spacing: .05rem;
+  
+  padding: 6px 8px 4px;
+  
+  color: black;
+  background-color: hsla(0, 0%, 0%, 0.0);
+  border: 1.4px solid black;
+}
+
+button:hover {
+  color: white;
+  background-color: hsla(0, 0%, 0%, 1.0);
+  cursor: pointer;
+}
+
+.box {
+  width: 100%;
+  height: 40vh;
+  background-color: black;
+  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.text {
+  font-family: Aspen;
+  font-variation-settings: 'base' -100;
+  font-size: calc(min(40vw, 45vh));
+  text-align: center;
+  color: white;
+  transform: translate(0%, -7%);
+}
+
+input[type="range"] {
+  -webkit-appearance: none;
+  appearance: none;
+  background: transparent;
+  cursor: pointer;
+}
+
+/***** Track Styles *****/
+/***** Chrome, Safari, Opera, and Edge Chromium *****/
+input[type="range"]::-webkit-slider-runnable-track {
+  background: #000000;
+  height: 1.4px;
+}
+
+/******** Firefox ********/
+input[type="range"]::-moz-range-track {
+  background: #000000;
+  height: 1.4px;
+}
+
+/***** Thumb Styles *****/
+/***** Chrome, Safari, Opera, and Edge Chromium *****/
+input[type="range"]::-webkit-slider-thumb {
+   -webkit-appearance: none; /* Override default look */
+   appearance: none;
+   border-radius: 49px; /*Removes default border-radius that FF applies*/
+   margin-top: -0.3rem; /* Centers thumb on the track */
+   background-color: #000000;
+  border: 1.4px solid black;
+   height: 0.7rem;
+   width: 0.7rem;
+}
+
+/***** Thumb Styles *****/
+/***** Firefox *****/
+input[type="range"]::-moz-range-thumb {
+    border: none; /*Removes extra border that FF applies*/
+    border-radius: 49px; /*Removes default border-radius that FF applies*/
+    background-color: #000000;
+    border: 1.4px solid black;
+    height: 0.7rem;
+    width: 0.7rem;
+}
