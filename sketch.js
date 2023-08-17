@@ -85,7 +85,9 @@ function playMozart() {
   song = mozart;
 
   if (!mozart.isPlaying()) {
+    let len = song.duration();
     mozart.play();
+    mozart.jump((49.25/120)*len);
     vivaldi.pause();
   } else {
     mozart.pause();
