@@ -29,7 +29,7 @@ button:hover {
 
 .box {
   width: 100%;
-  height: 40vh;
+  height: 100vh;
   background-color: black;
   
   display: flex;
